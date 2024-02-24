@@ -1,0 +1,24 @@
+.chat {
+  &_wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  &_body {
+    width: 70%;
+    height: calc(100% - 3rem);
+    overflow: hidden;
+    border-right: 0.1rem solid black;
+    padding: 4rem 2rem;
+  }
+
+  &_online_users {
+    width: 30%;
+    height: calc(100% - 3rem);
+    overflow: hidden;
+    padding: 4rem 2rem;
+  }
+}

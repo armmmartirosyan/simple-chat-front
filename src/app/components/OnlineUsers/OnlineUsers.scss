@@ -1,0 +1,16 @@
+.users_list {
+  list-style-type: none;
+}
+
+.user {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(174, 174, 174, 0.841);
+  cursor: pointer;
+  margin: 1rem 0;
+
+  &.selected {
+    background-color: rgb(92, 92, 92);
+    color: white;
+  }
+}

@@ -1,0 +1,18 @@
+.header {
+  width: 100%;
+  height: 4rem;
+  border-bottom: 0.1rem solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+
+  &_username {
+    font-size: 1.8rem;
+  }
+
+  .log_out {
+    cursor: pointer;
+    font-size: 1.4rem;
+  }
+}

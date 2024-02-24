@@ -1,0 +1,33 @@
+.message {
+  width: 45%;
+  display: flex;
+  gap: 1.5rem;
+  border-top: 0.1rem solid black;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+
+  &.message_from_me {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+  }
+
+  &_body {
+    width: calc(100% - 5rem);
+  }
+
+  &_user_image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.1rem solid black;
+  }
+
+  &_username {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &_text {
+    font-size: 1.4rem;
+  }
+}

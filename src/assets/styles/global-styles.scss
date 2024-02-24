@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(100vw / (1920 / 10));
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-size: 1.4rem;
+
+  &, & * {
+    font-family: Inter, sans-serif;
+  }
+}
