@@ -4,10 +4,12 @@ import { IMessage } from "../models/shared-types";
 import EventEmitter from "../utils/event-emitter";
 import { EVENTS } from "../constants/global-constants";
 import { account } from "./account-provider";
+import { createDefer } from "../utils/async-utils";
 
 class SignallingProvider {
-  public socket: Socket | null = null;
+  private socket: Socket | null = null;
   public emitter = new EventEmitter();
+  public doesNewMessageAdded = createDefer<IMessage>();
 
   public init(): void {
     const { username } = account.getUser();

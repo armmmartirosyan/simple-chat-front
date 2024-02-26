@@ -13,3 +13,10 @@ export interface IMessage {
 }
 
 export type SendMessage = (message: string) => void;
+
+export interface IDefer<T> {
+  promise: Promise<T> | null;
+  reject: (err?: Error) => void;
+  resolve: (value?: T) => void;
+  reset: VoidFunction;
+}

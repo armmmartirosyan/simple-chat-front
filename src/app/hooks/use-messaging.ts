@@ -48,6 +48,8 @@ export default function useMessaging(
 
   const handleNewMessage = (message: IMessage) => {
     setMessages((prev) => [...prev, message]);
+
+    signallingProvider.doesNewMessageAdded.resolve(message);
   };
 
   const handleConnect = (): void => {
