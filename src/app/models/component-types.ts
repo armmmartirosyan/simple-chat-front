@@ -2,7 +2,6 @@ import { IMessage } from "./shared-types";
 
 export interface IMessagesListProps {
   messages: IMessage[];
-  selectedUser: string;
 }
 
 export interface IMessageInputProps {

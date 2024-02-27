@@ -45,7 +45,7 @@ function Chat(): JSX.Element {
       <div className="chat_body">
         {!!selectedUser ? (
           <>
-            <MessagesList messages={messages} selectedUser={selectedUser} />
+            <MessagesList messages={messages} />
             <MessageInput sendMessage={sendMessage} />
           </>
         ) : (

@@ -13,7 +13,20 @@ body {
   color: black;
   font-size: 1.4rem;
 
-  &, & * {
+  &,
+  & * {
     font-family: Inter, sans-serif;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: calc(100vw / (1280 / 10));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: calc(100vw / (768 / 10));
   }
 }
