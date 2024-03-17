@@ -2,8 +2,9 @@
   "compilerOptions": {
     "target": "ES6",
     "jsx": "react",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "noImplicitAny": true
-  }
+  },
+  "include": ["src", "index.d.ts"]
 }

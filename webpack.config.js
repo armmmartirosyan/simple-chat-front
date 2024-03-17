@@ -7,8 +7,16 @@ const RULES = [
     use: "babel-loader",
   },
   {
+    test: /\.(mp3|wav|webm|mp4)$/,
+    use: ["file-loader"],
+  },
+  {
     test: /\.(sass|scss|css)$/i,
     use: ["style-loader", "css-loader", "sass-loader"],
+  },
+  {
+    test: /\.(jpe?g|gif|png|svg)$/i,
+    use: ["url-loader"],
   },
 ];
 
@@ -25,7 +33,7 @@ module.exports = {
   },
   plugins: PLUGINS,
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".tsx", ".ts", ".js", ".mp3", ".jpeg"],
   },
   devServer: {
     historyApiFallback: true,

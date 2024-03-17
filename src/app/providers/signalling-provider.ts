@@ -4,6 +4,7 @@ import { IMessage } from "../models/shared-types";
 import EventEmitter from "../utils/event-emitter";
 import { EVENTS } from "../constants/global-constants";
 import { account } from "./account-provider";
+import notification from "../../assets/sounds/notification.mp3";
 
 class SignallingProvider {
   private socket: Socket | null = null;
@@ -45,7 +46,9 @@ class SignallingProvider {
 
   private onNewMessage = (message: IMessage): void => {
     if (!this.emitter) return;
-
+    console.log("hehe");
+    const a = new Audio(notification);
+    a.play();
     this.emitter.emit(EVENTS.NEW_MESSAGE, message);
   };
 
